@@ -42,5 +42,5 @@ A full-stack POS & inventory system built using **React**, **Node.js/Express**, 
 
 ---
 
-## 🗂 Folder Structure
+Developer - Diyath Wanigasekara
 
