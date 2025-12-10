@@ -1,0 +1,178 @@
+/* src/components/Sidebar.css */
+
+/* ===== SIDEBAR WRAPPER ===== */
+
+.sidebar {
+  width: 260px;
+  background: #5a57ff; /* your purple */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 18px;
+}
+
+/* ===== LOGO ===== */
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.sidebar-logo-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #5a57ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* small text under logo */
+.sidebar-logo-text-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.sidebar-logo-text-sub {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+/* ===== MENU ===== */
+
+.sidebar-menu {
+  margin-top: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar-section-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  opacity: 0.8;
+  margin: 10px 4px 4px;
+  color: #ffffff;              /* 🔥 force white section titles */
+}
+
+.sidebar-link {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 2px 0;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.95;
+  transition: background 0.15s ease, transform 0.1s ease, opacity 0.1s ease;
+  text-decoration: none;
+  color: #ffffff;              /* 🔥 force white text for links */
+}
+
+
+.sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateX(2px);
+}
+
+.sidebar-link.active {
+  background: #ffffff;
+  color: #5a57ff;
+  font-weight: 600;
+}
+
+.sidebar-link.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* ===== FOOTER / LOGOUT ===== */
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.sidebar-logout-btn {
+  display: block;              /* 🔥 make it stretch full width */
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  text-align: center;          /* nicer text alignment */
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.sidebar-logout-btn:hover {
+  background: rgba(255, 255, 255, 0.24);
+  transform: translateY(-1px);
+}
+/* src/components/Sidebar.css */
+
+/* ===== SIDEBAR WRAPPER ===== */
+
+.sidebar {
+  width: 260px;
+  background: #5a57ff;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 18px;
+}
+
+/* ===== LOGO ===== */
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+/* Square container for the logo image */
+.sidebar-logo-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;          /* crop if image is bigger */
+}
+
+/* Actual logo image */
+.sidebar-logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* small text under logo */
+.sidebar-logo-text-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.sidebar-logo-text-sub {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+/* ===== MENU ===== */
+/* (keep the rest of your CSS exactly as it is) */
